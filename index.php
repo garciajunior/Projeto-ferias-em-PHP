@@ -31,10 +31,15 @@
 
 	echo $aluno;*/
 	
-$usuario = new Usuario();
-$usuario->loadByid(8);
-echo $usuario;
-$usuario->update("Professor", "profecsor");
+    /*$usuario = new Usuario();
+    $usuario->loadByid ( 9 );
+    echo $usuario;
+    $usuario->update("Professor", "Junior");*/
+    //DELETANDO USUARIO
+    $usuario = new  Usuario();
+    $usuario->loadByid(8);
+    $usuario->delete();
+    echo $usuario;
 
 
 
